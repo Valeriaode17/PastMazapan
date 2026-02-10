@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Valeria Macias | Full-Stack</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <div class="logo-text">Valeria Macias</div>
+        </div>
+        
+        <div class="menur" id="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+
+        <nav class="nav-principal" id="nav-menu">
+            <a href="acerca_de_mi.html">Sobre Mí</a>
+            <a href="habilidades.html">Habilidades</a>
+            <a href="trabajo.html">Trabajos</a>
+            <a href="contactame.html">Contactame</a>
+            <div class="idiomas">
+                <a href="#">🇺🇸</a><a href="#">🇫🇷</a><a href="#">🇲🇽</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-text">
+                <h2>Desarrolladora Full-Stack</h2>
+                <h1>Odemaris Valeria<br>Macias Lopez</h1>
+                <p>Soy estudiante con interés en bases de datos y sistemas de información.
+Me enfoco en el diseño y manejo eficiente de datos, creando soluciones organizadas y confiables para aplicaciones web.</p>
+                
+                <div class="botones-wrapper">
+                    <button class="btn btn-primary" onclick="descargarCV()">Descargar CV</button>
+                </div>
+            </div>
+             <div class="about-img">
+                <img src="imagenes/porta2.png" alt="Valeria Macias">
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const menu = document.getElementById('nav-menu');
+        const toggle = document.getElementById('menu-toggle');
+        
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+            toggle.innerHTML = menu.classList.contains('active') ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
+        });
+
+        function descargarCV() {
+            const link = document.createElement('a');
+            link.href = 'archivos/CV-Valeria.pdf';
+            link.download = 'CV_Valeria_Macias.pdf';
+            link.click();
+        }
+
+        
+    </script>
+</body>
+</html>

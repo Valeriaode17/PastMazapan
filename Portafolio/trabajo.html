@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mis Trabajos</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+          <a href="index.html">  <div class="logo-text">Valeria Macias</div></a>
+        </div>
+        <div class="menur" id="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+        <nav class="nav-principal" id="nav-menu">
+            <a href="acerca_de_mi.html">Sobre Mí</a>
+            <a href="habilidades.html">Habilidades</a>
+            <a href="trabajo.html" class="active">Trabajos</a>
+            <a href="contactame.html">Contactame</a>
+            <div class="idiomas"><a href="#">🇺🇸</a><a href="#">🇫🇷</a><a href="#">🇲🇽</a></div>
+        </nav>
+    </header>
+
+    <main style="display: block;">
+        <div style="text-align: center; margin-bottom: 50px;">
+            <h2 style="color: var(--primary); letter-spacing: 2px;">TRABAJOS</h2>
+            <h1 class="section-title">Mis Proyectos Recientes</h1>
+        </div>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="imagenes/pasteleria.png" alt="Pasteleria MZ">
+                </div>
+                <div class="project-info">
+                    <h3>Pazteleria Mazapan</h3>
+                    <p>Inventario web con base de datos y diseño moderno. Correo:valeria@gmail.com Contraseña:12345</p>
+                    <a href="https://pasteleriamazapan.gt.tc/index.php" target="_blank" class="project-link">Visitar Web <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="imagenes/paghumbe.png" alt="Escencia">
+                </div>
+                <div class="project-info">
+                    <h3>Escencia Humbe</h3>
+                    <p>Sitio web promocional enfocado en la experiencia visual del artista.</p>
+                    <a href="https://escenciahumbe.netlify.app/galeria" target="_blank" class="project-link">Visitar Web <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="imagenes/biomango.png" alt="Biomango">
+                </div>
+                <div class="project-info">
+                    <h3>Biomango</h3>
+                    <p>Plataforma ecológica para la promoción de productos sustentables.</p>
+                    <a href="https://biomango.netlify.app/" target="_blank" class="project-link">Visitar Web <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <div style="text-align: center; margin-bottom: 50px; margin-top: 70px;">
+            <h1 class="section-title">Certificaciónes</h1>
+        </div>
+
+         
+
+            <div class="project-card">
+               
+                <div class="project-info">
+                    <p>
+                      <a href="archivos/HTML_Essentials.pdf" target="_blank" class="cert-card">HTML Essentials </a>  <br>  
+                       <a href="archivos/CSS_Essentials.pdf" target="_blank" class="cert-card"> CSS Essentials </a> </a> <br>
+                       <a href="archivos/_certificate_2024030412-upsin-edu-mx_d6524109-311c-49c8-b7bb-3d5c631f9f3f.pdf" target="_blank" class="cert-card"> CCNA: Introduction to Networks </a> <br>
+                       <a href="archivos/_certificate_2024030412-upsin-edu-mx_9a2d848d-819b-4de3-bdf1-77d6d4db881f.pdf" target="_blank" class="cert-card"> Conceptos básicos de redes </a> <br>
+                       <a href="archivos/_certificate_2024030412-upsin-edu-mx_f9e3c889-1b2c-4151-82b2-3f17e2bc3f97.pdf" target="_blank" class="cert-card"> CCNA: Switching, Routing, and Wireless Essentials</a> <br>
+                       <a href="archivos/_certificate_2024030412-upsin-edu-mx_8d04f454-b021-46c7-a049-d691edbfd380.pdf" target="_blank" class="cert-card" > Conciencia digital</a> <br>
+                       <a href="archivos/_certificate_2024030412-upsin-edu-mx_c14c373d-f479-456c-875f-56ac12d8cc54.pdf" target="_blank" class="cert-card"> Using Computer and Mobile Devices</a> 
+                    </p>
+                    
+                </div>
+            </div>
+
+    </main>
+
+    <script>
+        const menu = document.getElementById('nav-menu');
+        const toggle = document.getElementById('menu-toggle');
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+            toggle.innerHTML = menu.classList.contains('active') ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
+        });
+
+      
+    </script>
+</body>
+</html>

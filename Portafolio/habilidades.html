@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Habilidades</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+           <a href="index.html"> <div class="logo-text">Valeria Macias</div></a>
+        </div>
+        <div class="menur" id="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+        <nav class="nav-principal" id="nav-menu">
+            <a href="acerca_de_mi.html">Sobre Mí</a>
+            <a href="habilidades.html" class="active">Habilidades</a>
+            <a href="trabajo.html">Trabajos</a>
+            <a href="contactame.html">Contactame</a>
+            <div class="idiomas"><a href="#">🇺🇸</a><a href="#">🇫🇷</a><a href="#">🇲🇽</a></div>
+        </nav>
+    </header>
+
+    <main style="display: block;">
+        <div style="text-align: center; margin-bottom: 40px;">
+            <h2 style="color: var(--primary); letter-spacing: 2px;">HABILIDADES</h2>
+            <h1 class="section-title">Skills</h1>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fa-brands fa-html5 fa-3x"></i>
+                <p>HTML5</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-css3-alt fa-3x"></i>
+                <p>CSS3</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-js fa-3x"></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-java fa-3x"></i>
+                <p>Java</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-git-alt fa-3x"></i>
+                <p>Git</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-database fa-3x"></i>
+                <p>MySQL</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-php fa-3x"></i>
+                <p>PHP</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-mobile-screen-button fa-3x"></i>
+                <p>Responsive</p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const menu = document.getElementById('nav-menu');
+        const toggle = document.getElementById('menu-toggle');
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+            toggle.innerHTML = menu.classList.contains('active') ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
+        });
+    </script>
+</body>
+</html>
